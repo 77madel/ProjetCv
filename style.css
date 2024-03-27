@@ -60,17 +60,17 @@
 /*    border: 1px solid transparent;*/
 /*}*/
 
-/*.col .contents .box::before{*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    width: 16px;*/
-/*    height: 16px;*/
-/*    border-radius: 50%;*/
-/*    right: calc(100% + 22px);*/
-/*    top: 0%;*/
-/*    background-color: #583EFF;*/
-/*    border: 2px solid white;*/
-/*}*/
+    /*.col .contents .box::before{*/
+    /*    content: "";*/
+    /*    position: absolute;*/
+    /*    width: 16px;*/
+    /*    height: 16px;*/
+    /*    border-radius: 50%;*/
+    /*    right: calc(100% + 22px);*/
+    /*    top: 0%;*/
+    /*    background-color: #583EFF;*/
+    /*    border: 2px solid white;*/
+    /*}*/
 /*.box h4{*/
 /*    position: relative;*/
 /*    color: #000000;*/

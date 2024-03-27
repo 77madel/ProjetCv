@@ -118,8 +118,55 @@ main section .part-element3{
     left: -6px; /* Ajustez la position horizontale du point */
 }
 
+/* Ajoutez ces styles pour créer des points ronds sur les lignes */
 
+.part:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #583EFF;
+    border-radius: 50%;
+    top: 100%;
+    transform: translateY(-50%);
+    left: -6px; /* Ajustez la position horizontale du point */
+}
 
+.part:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #583EFF;
+    border-radius: 50%;
+    top: 100%;
+    transform: translateY(-50%);
+    left: -6px; /* Ajustez la position horizontale du point */
+}
+
+.part:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #583EFF;
+    border-radius: 50%;
+    top: 0;
+    transform: translateY(-50%);
+    right: 99%; /* Ajustez la position horizontale du point */
+}
+
+.part:nth-child(even)::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #583EFF;
+    border-radius: 50%;
+    top: 0;
+    transform: translateY(-50%);
+    right: 99%; /* Ajustez la position horizontale du point */
+}
 
 
 hr {
@@ -178,11 +225,9 @@ hr {
     background: linear-gradient(to right, #583EFF, #7620DC); /* Dégradé linéaire */
 }
 footer h2{
+    text-align: center;
     border: 2px solid silver;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 30px 10px;
+    margin: 35px 35px;
     padding: 10px 10px;
 }
 footer .interet{
@@ -208,9 +253,12 @@ footer i{
     margin-right: 10px;
 }
 
-@media screen and (max-width: 768px){
-    main {
+@media screen and (max-width: 641px){
+    * {
         width: 100%;
+        margin: 0px;
+        font-family: sans-serif;
+        padding: 0px;
     }
 
     /* .interet {
@@ -222,22 +270,51 @@ footer i{
 
     }
 
-    /* .interet h2 {
-        flex-direction: column;
-    } */
-
-    header {
-        width: 90%;
+    footer h2 {
+        margin: 30px 30px;
+        width: 80%;
+    }
+    .interets-element{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .interet{
+        margin-left: 10px;
     }
 
-    .info{
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        border-radius: 0;
+    }
 
+    .photo img{
+       width: 50%;
+        border-radius: 50%;
+    }
+
+
+    .info{
+        font-size: 12px;
         flex-direction: column;
+        background: linear-gradient(to right, #583EFF, #7620DC);
+        font-family: sans-serif;
+
     }
 
     .info-corp{
-        flex-direction: column;
+        flex-direction: row;
     }
-
+    main{
+        width: 80%;
+    }
+    footer i{
+        background: linear-gradient(to right, #583EFF, #7620DC);
+        color: white;
+        padding: 5px;
+        width: 50px;
+        border-radius: 50%;
+    }
 
 }
