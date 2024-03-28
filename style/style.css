@@ -1,3 +1,5 @@
+/* Réinitialisation des styles pour tous les éléments */
+
 *{
     margin: 0;
     padding: 0;
@@ -5,10 +7,11 @@
     font-family: 'open sans';
 }
 
+/* Styles généraux pour le corps de la page */
 body{
     width: 100%;
     min-height: 100vh;
-    /*display: flex;*/
+    /* Centrage vertical et horizontal */
     justify-content: center;
     align-items: center;
 }
@@ -26,10 +29,12 @@ body{
 
 /* }  */
 
+/* Styles spécifiques pour l'en-tête */
 header {
+    /* Arrière-plan de l'en-tête avec image de fond */
     background-image: url(../img/2.png);
-    background-size: cover; /* Resize proportionally to fill */
-    background-position: center center; /* Center horizontally and vertically */
+    background-size: cover;/* Redimensionnement proportionnel pour remplir */
+    background-position: center center; /* Centrage horizontal et vertical */
     display: flex;
     justify-content: space-around;
     color: white;
@@ -37,7 +42,7 @@ header {
     background-repeat: no-repeat;
   }
   
-
+/* Styles pour les informations personnelles dans l'en-tête */
 .info{
     display: flex;
     flex-direction: column;
@@ -45,6 +50,11 @@ header {
     /*margin-bottom: 20px;*/
 }
 
+.info .info-corp-element{
+    margin-left: 12px;
+}
+
+/* Ajustement de la marge interne pour les informations personnelles */
 header .info{
     padding: 30px 10px 40px 80px;
 }
@@ -52,12 +62,18 @@ header .info-corp{
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+    
 }
+
+/* Styles pour la description des informations personnelles */
 header .info-corp-description {
     font-size: 13px;
     display: flex;
     justify-content: space-between;
+    margin-left: 12px;
 }
+
+/* Positionnement absolu des éléments "tel" et "email" */
 header .info-corp-description .tel{
     position: absolute;
     left: 200px;
@@ -65,34 +81,48 @@ header .info-corp-description .tel{
 header .info-corp-description .email{
     position: absolute;
     left: 345px;
+   
 }
+
+/* Styles pour l'image dans l'en-tête */
 header img{
     margin-top: 10px;
     border-radius: 15px;
 
 }
 
+/* Styles pour la section principale */
 main{
     margin: 10px;
 }
+
+/* Styles pour les titres de sections */
 main section h2{
     text-align: center;
     border: 2px solid silver;
     margin: 30px 30px;
     padding: 10px 10px;
 }
+
+/* Styles pour les paragraphes dans les sections */
 main section p{
     margin: 0px 30px;
     
 }
+
+/* Styles pour le texte de profil dans les sections */
 main section .profile-text{
     font-weight: bold;
 }
+
+/* Styles pour les contenus des sections */
 main section .content {
     display: flex;
     justify-content: space-around;
     margin: 0px 30px;
 }
+
+/* Espacement supplémentaire pour certains éléments */
 main section .part-element2{
     margin-top: 50px;
 }
@@ -100,12 +130,14 @@ main section .part-element3{
     margin-top: 80px;
 }
 
+/* Styles pour les parties des sections */
 .part {
    padding: 0px 30px;
     border-left: 2px solid #583EFF;
     position: relative;
 }
 
+/* Styles pour les points avant chaque partie */
 .part::before {
     content: "";
     position: absolute;
@@ -168,7 +200,7 @@ main section .part-element3{
     right: 99%; /* Ajustez la position horizontale du point */
 }
 
-
+/* Styles pour la ligne horizontale */
 hr {
     height: 3px; 
     border: none; 
@@ -179,6 +211,7 @@ hr {
     background-color: silver;
 }
 
+/* Styles pour les éléments HTML */
 .html::before {
     content: "";
     position: absolute;
@@ -224,16 +257,22 @@ hr {
     height: 100%;
     background: linear-gradient(to right, #583EFF, #7620DC); /* Dégradé linéaire */
 }
+
+
 footer h2{
     text-align: center;
     border: 2px solid silver;
     margin: 35px 35px;
     padding: 10px 10px;
 }
+
+/* Styles pour les éléments de liste d'intérêts */
 footer .interet{
 position: relative;
 display: flex;
 }
+
+/* Styles pour chaque élément de la liste d'intérêts */
 .interets-element{
     /* margin: 0px 70px; */
     display: flex;
@@ -244,6 +283,8 @@ display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* Styles pour les icônes de la liste d'intérêts */
 footer i{
     background: linear-gradient(to right, #583EFF, #7620DC);
     color: white;
@@ -253,6 +294,7 @@ footer i{
     margin-right: 10px;
 }
 
+/* Médias queries pour les écrans de petite*/
 @media screen and (max-width: 641px){
     * {
         width: 100%;
@@ -277,9 +319,11 @@ footer i{
     .interets-element{
         font-size: 12px;
         margin-bottom: 15px;
+        justify-content: center;
     }
     .interet{
-        margin-left: 10px;
+        margin-left: 12px;
+        
     }
 
     header{
@@ -315,6 +359,11 @@ footer i{
         padding: 5px;
         width: 50px;
         border-radius: 50%;
+    }
+
+    .info .info-corp{
+        flex-direction: column;
+        margin-top: 10px;
     }
 
 }
