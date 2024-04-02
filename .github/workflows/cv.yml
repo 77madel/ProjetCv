@@ -1,0 +1,24 @@
+name: ProjetCV CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Installation des dépendances 
+      run: echo 'install dependencies'
+
+    # Ajoutez une étape pour construire le CV
+    - name: Construire le CV
+      run: echo 'building CV'
+
+    # Ajoutez une étape pour déployer le CV
+    - name: Déployer le CV
+      run: echo 'deploying CV'
