@@ -1,3 +1,12 @@
+
+
+:root {
+    --bleu: #A773FF;
+    --couleur_principale: #583EFF;
+    --silver: #E3D7FF;
+}
+
+
 /* Réinitialisation des styles pour tous les éléments */
 
 *{
@@ -99,7 +108,7 @@ main{
 /* Styles pour les titres de sections */
 main section h2{
     text-align: center;
-    border: 2px solid silver;
+    border: 2px solid var(--silver);
     margin: 30px 30px;
     padding: 10px 10px;
 }
@@ -133,7 +142,7 @@ main section .part-element3{
 /* Styles pour les parties des sections */
 .part {
    padding: 0px 30px;
-    border-left: 2px solid #583EFF;
+    border-left: 2px solid var(--couleur_principale);
     position: relative;
 }
 
@@ -143,7 +152,7 @@ main section .part-element3{
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #583EFF;
+    background-color: var(--couleur_principale);
     border-radius: 50%;
     top: 0;
     transform: translateY(-50%);
@@ -157,7 +166,7 @@ main section .part-element3{
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #583EFF;
+    background-color: var(--couleur_principale);
     border-radius: 50%;
     top: 100%;
     transform: translateY(-50%);
@@ -169,7 +178,7 @@ main section .part-element3{
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #583EFF;
+    background-color: var(--couleur_principale);
     border-radius: 50%;
     top: 100%;
     transform: translateY(-50%);
@@ -181,7 +190,7 @@ main section .part-element3{
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #583EFF;
+    background-color: var(--couleur_principale);
     border-radius: 50%;
     top: 0;
     transform: translateY(-50%);
@@ -193,7 +202,7 @@ main section .part-element3{
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #583EFF;
+    background-color: var(--couleur_principale);
     border-radius: 50%;
     top: 0;
     transform: translateY(-50%);
